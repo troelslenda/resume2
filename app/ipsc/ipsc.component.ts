@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: "app/sport/sport.html"
+    template: "<h1>Ipsc</h1>"
 })
-export class SportComponent { }
+export class IpscComponent { }
