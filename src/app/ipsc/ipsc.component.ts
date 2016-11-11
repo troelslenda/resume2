@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: "<h1>Ipsc</h1>"
+    templateUrl: "app/ipsc/ipsc.html"
 })
 export class IpscComponent { }

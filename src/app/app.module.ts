@@ -9,11 +9,16 @@ import { HelloComponent }  from './hello/hello.component';
 import { WorkComponent }  from './work/work.component';
 import { SportComponent } from './sport/sport.component';
 import { IpscComponent } from './ipsc/ipsc.component';
+import { ProjectsComponent }  from './project/projects.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     routing
+    /*RouterModule.forRoot([
+      { path: 'work', component: WorkComponent },
+      { path: '', component: HelloComponent }
+    ])*/
   ],
   declarations: [ AppComponent, HelloComponent, WorkComponent, SportComponent, IpscComponent ],
   bootstrap:    [ AppComponent ]
