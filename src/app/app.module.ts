@@ -8,6 +8,7 @@ import { routing } from './app.router';
 import { HelloComponent }  from './hello/hello.component';
 import { WorkComponent }  from './work/work.component';
 import { SportComponent } from './sport/sport.component';
+import { githubRibbonComponent } from './githubribbon/githubribbon.component';
 import { IpscComponent } from './ipsc/ipsc.component';
 import { ProjectsComponent }  from './project/projects.component';
 
@@ -20,7 +21,7 @@ import { ProjectsComponent }  from './project/projects.component';
       { path: '', component: HelloComponent }
     ])*/
   ],
-  declarations: [ AppComponent, HelloComponent, WorkComponent, SportComponent, IpscComponent ],
+  declarations: [ AppComponent, HelloComponent, WorkComponent, SportComponent, IpscComponent, githubRibbonComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
