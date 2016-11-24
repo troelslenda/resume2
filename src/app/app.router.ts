@@ -13,16 +13,11 @@ import { IpscComponent }  from './ipsc/ipsc.component';
 
 // Route Configuration
 export const router: Routes = [
-  { path: '', redirectTo: 'hello', pathMatch : 'full' },
+  { path: '', component: HelloComponent, pathMatch : 'full' },
   { path: 'hello', component: HelloComponent },
   { path: 'sport', component: SportComponent },
   { path: 'ipsc', component: IpscComponent },
   { path: 'work', component: WorkComponent }
 ];
-
-// Deprecated provide
-// export const APP_ROUTER_PROVIDERS = [
-//   provideRouter(routes)
-// ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(router);
