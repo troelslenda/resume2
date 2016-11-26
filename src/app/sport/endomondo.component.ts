@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { EndomondoService } from './endomondo.service';
+import {Activity} from './activity';
 
 @Component({
-    selector: 'activities',
+    selector: 'activities-list',
+    providers: [EndomondoService],
     template: `<h2>aktiviteter fra Endomondo</h2>
     <table>
     <tr *ngFor="let activity of activities">
@@ -14,8 +16,9 @@ import { EndomondoService } from './endomondo.service';
     </table>`
 })
 export class EndomondoComponent {
-    private activities;
+    private activities:Activity[];
+
     constructor(private _endomondoService:EndomondoService) {
-        this.activities = _endomondoService.getActivities();
+        this._endomondoService.getActivities().subscribe(activities => {this.activities = activities});
     }
 }
