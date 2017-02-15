@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { EndomondoService } from './endomondo.service';
-import {Activity} from './activity';
+import { Component          } from '@angular/core';
+import { EndomondoService   } from './endomondo.service';
+import { Activity           } from './activity';
+import { RunningPipe        } from './running-pipe';
 
 @Component({
     selector: 'activities-list',
     providers: [EndomondoService],
     template: `<h2>aktiviteter fra Endomondo</h2>
     <table>
-    <tr *ngFor="let activity of activities">
+    <tr *ngFor="let activity of (activities | RunningPipe)">
      <td>{{ activity.date }}</td>
      <td>{{ activity.activity }}</td>
      <td>{{ activity.distance }}</td>

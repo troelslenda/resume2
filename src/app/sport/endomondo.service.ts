@@ -7,10 +7,11 @@ import 'rxjs/Rx';
 @Injectable()
 export class EndomondoService{
 
-    private endpoint_url:string = "http://troelslenda.com/api/endomondo";
+    private endpoint_url:string = "http://localhost:3000/endomondo.js";
     constructor (private http: Http) {}
 
-    getActivities (): Observable<Activity[]> {
-        return this.http.get(this.endpoint_url).map(res => res.json())
+    getActivities(): Observable<Activity[]> {
+        return this.http.get(this.endpoint_url).map(res => res.json() as Activity[]);
+
     }
 }

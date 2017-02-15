@@ -1,12 +1,94 @@
-<a href="">Tilbage</a>
+<a (click)="goBack()" class="goback">Tilbage</a>
 
-<img width="50%" src="/assets/images/2015-07-05 14.59.52.jpg">
-<img width="50%" src="/assets/images/18908_10153344287654840_5423894079797749718_n.jpg">
-<img width="50%" src="/assets/images/10533448_10153567115674840_6001934708958659034_n.jpg">
-<img width="50%" src="/assets/images/11393362_866974530004373_7917964011542374922_o.jpg">
-<img width="50%" src="/assets/images/11836755_10153464575264840_148873506163064077_n.jpg">
-<img width="50%" src="/assets/images/IMG_0028.JPG">
-<img width="50%" src="/assets/images/IMG_0290.jpg">
-<img width="50%" src="/assets/images/IMG_1800.jpg">
-<img width="50%" src="/assets/images/IMG_2652.JPG">
+<style>
 
+  .goback {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #039be5;
+    padding: 10px;
+  }
+
+  .quarter {
+    display: inline-block;
+    width: 25%;
+  }
+  .quarter img {
+    width: 100% !important;
+    height: 25vh !important;
+  }
+
+  .ipsccollage {
+    font-size: 0;
+    vertical-align: top;
+
+  }
+.ipsccollage img,
+.ipsccollage .video {
+  float:left;
+  width:50%;
+
+}
+.ipsccollage img,
+.ipsccollage .video {
+  height: 50vh;
+  object-fit: cover;
+}
+  .ipsccollage .video {
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+  }
+  .video video {
+    position: absolute;
+    height: 100%;
+    /*left:-25%;*/
+  }
+
+  .ipsccollage img:nth-child(1) {
+
+  }
+
+  .ipsccollage img:nth-child(2) {
+
+  }
+  .ipsccollage img:nth-child(3) {
+
+  }
+
+</style>
+
+<div class="ipsccollage">
+  <img src="/dist/assets/images/11393362_866974530004373_7917964011542374922_o.jpg">
+  <div class="video">
+  <video autoplay loop muted>
+    <source src="/dist/assets/ipsc.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  </div>
+  <img src="/dist/assets/images/10533448_10153567115674840_6001934708958659034_n.jpg" style="width:25%">
+  <div class="quarter">
+    <img src="/dist/assets/images/IMG_0028.JPG">
+    <img src="/dist/assets/images/IMG_2652.JPG">
+  </div>
+  <img src="/dist/assets/images/11836755_10153464575264840_148873506163064077_n.jpg">
+
+
+
+
+</div>
+
+
+<div style="display:none">
+  <img src="/dist/assets/images/2015-07-05 14.59.52.jpg">
+  <img src="/dist/assets/images/18908_10153344287654840_5423894079797749718_n.jpg">
+  <img src="/dist/assets/images/10533448_10153567115674840_6001934708958659034_n.jpg">
+  <img src="/dist/assets/images/11393362_866974530004373_7917964011542374922_o.jpg">
+  <img src="/dist/assets/images/11836755_10153464575264840_148873506163064077_n.jpg">
+  <img src="/dist/assets/images/IMG_0028.JPG">
+  <img src="/dist/assets/images/IMG_0290.jpg">
+  <img src="/dist/assets/images/IMG_1800.jpg">
+  <img src="/dist/assets/images/IMG_2652.JPG">
+
+</div>

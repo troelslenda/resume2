@@ -13,13 +13,16 @@ import { IpscComponent }  from './ipsc/ipsc.component';
 import {EndomondoComponent} from "./sport/endomondo.component";
 //import { ProjectsComponent }  from './project/projects.component';
 
+
+import { RunningPipe        } from './sport/running-pipe';
+
 @NgModule({
   imports: [
     BrowserModule,
     routing,
     HttpModule,
   ],
-  declarations: [ AppComponent, HelloComponent, WorkComponent, SportComponent, IpscComponent, githubRibbon, EndomondoComponent ],
+  declarations: [ AppComponent, HelloComponent, WorkComponent, SportComponent, RunningPipe, IpscComponent, githubRibbon, EndomondoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
