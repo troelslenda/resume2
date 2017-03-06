@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: "<div class='tainer'><github-ribbon></github-ribbon><router-outlet></router-outlet></div>",
+    template: "<github-ribbon></github-ribbon><router-outlet></router-outlet>",
 })
 export class AppComponent { }
